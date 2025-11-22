@@ -1,6 +1,7 @@
 import React from "react";
 import { RESUME_DATA } from "../constants";
 import { MapPin, Mail, Phone, Github, Linkedin } from "lucide-react";
+import profileImage from "../mee.jpeg";
 
 const AboutApp: React.FC = () => {
 	return (
@@ -8,7 +9,7 @@ const AboutApp: React.FC = () => {
 			{/* Header */}
 			<div className="flex flex-col md:flex-row items-center gap-8 mb-12 border-b border-gray-300 pb-8">
 				<img
-					src="./mee.jpeg"
+					src={profileImage}
 					alt="Mallik"
 					className="w-32 h-32 rounded-full object-cover shadow-lg border-4 border-ubuntu-orange"
 				/>
