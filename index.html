@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mallik's Portfolio | Ubuntu OS</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							ubuntu: ["Ubuntu", "sans-serif"],
+							mono: ['"JetBrains Mono"', "monospace"],
+						},
+						colors: {
+							ubuntu: {
+								orange: "#E95420",
+								dark: "#2C001E",
+								purple: "#772953",
+								light: "#AEA79F",
+								warm: "#5E2750",
+							},
+						},
+						keyframes: {
+							popIn: {
+								"0%": {
+									opacity: "0",
+									transform: "translate(-50%, -48%) scale(0.96)",
+								},
+								"100%": {
+									opacity: "1",
+									transform: "translate(-50%, -50%) scale(1)",
+								},
+							},
+						},
+						animation: {
+							popIn: "popIn 0.25s cubic-bezier(0.2, 0.8, 0.2, 1)",
+						},
+					},
+				},
+			};
+		</script>
+		<script type="importmap">
+			{
+				"imports": {
+					"react": "https://aistudiocdn.com/react@^19.2.0",
+					"react/": "https://aistudiocdn.com/react@^19.2.0/",
+					"lucide-react": "https://esm.sh/lucide-react@0.454.0?external=react",
+					"@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+					"react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+					"react-dom/client": "https://aistudiocdn.com/react-dom@^19.2.0/client",
+					"react-markdown": "https://esm.sh/react-markdown@9?bundle"
+				}
+			}
+		</script>
+		<link rel="stylesheet" href="/index.css" />
+	</head>
+	<body
+		class="bg-black h-screen w-screen overflow-hidden bg-cover bg-center bg-no-repeat"
+		style="
+			background-image: url('https://fostips.com/wp-content/uploads/2022/06/2204-wallpaper-1600x900.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		"
+	>
+		<div id="root"></div>
+		<script type="module" src="/index.tsx"></script>
+	</body>
+</html>
